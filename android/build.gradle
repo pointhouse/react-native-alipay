@@ -30,10 +30,9 @@ android {
 
 repositories {
     mavenCentral()
-    flatDir { dirs 'libs' }
 }
 
 dependencies {
     implementation "com.facebook.react:react-native:+"
-    implementation fileTree(dir: "libs", include: ["*.aar"])
+    api 'com.alipay.sdk:alipaysdk-android:+@aar'
 }
